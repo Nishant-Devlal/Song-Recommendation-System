@@ -3,8 +3,8 @@ import streamlit as st
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-CLIENT_ID = "46a307ffb8d44f41bb5aafdc81540b89"
-CLIENT_SECRET = "9d7dceceaf58483e919985e7567dfbcb"
+CLIENT_ID = "-enter_your_client_id_"
+CLIENT_SECRET = "_enter_your_client_secret_"
 
 client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
@@ -120,6 +120,7 @@ if st.button("Recommend"):
                 """,
                 unsafe_allow_html=True
             )
+
 
 
 
